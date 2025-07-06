@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+#board {
+    margin-bottom: 20px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin: 2px;
+    line-height: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.correct {
+    background-color: #6aaa64;
+    color: white;
+}
+.present {
+    background-color: #c9b458;
+    color: white;
+}
+.absent {
+    background-color: #787c7e;
+    color: white;
+}
