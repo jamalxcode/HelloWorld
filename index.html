@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oil Panic - Game &amp; Watch Tribute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="cabinet">
+      <section class="top-screen">
+        <div class="scoreboard">
+          <div class="score">SCORE <span id="score">0000</span></div>
+          <div class="misses">MISS <span id="misses">0</span></div>
+          <div class="oil-level">
+            OIL
+            <div class="slots">
+              <span class="slot" data-index="0"></span>
+              <span class="slot" data-index="1"></span>
+              <span class="slot" data-index="2"></span>
+            </div>
+          </div>
+        </div>
+        <div class="pipes">
+          <div class="pipe" data-column="0"></div>
+          <div class="pipe" data-column="1"></div>
+          <div class="pipe" data-column="2"></div>
+        </div>
+        <div id="drops" class="drop-layer"></div>
+        <div id="bucket" class="bucket" aria-live="polite">
+          <div class="bucket-top"></div>
+          <div class="bucket-body">
+            <span class="cell" data-index="0"></span>
+            <span class="cell" data-index="1"></span>
+            <span class="cell" data-index="2"></span>
+          </div>
+        </div>
+      </section>
+      <section class="hinge">
+        <div class="hinge-inner"></div>
+      </section>
+      <section class="bottom-screen">
+        <div class="floor"></div>
+        <div class="counter"></div>
+        <div class="characters">
+          <div class="friendly-wrapper">
+            <div class="friendly" id="friendly">🐱</div>
+          </div>
+          <div class="policeman" id="policeman">
+            <div class="hat"></div>
+            <div class="body"></div>
+          </div>
+        </div>
+        <div class="instructions">
+          <h1>Oil Panic Tribute</h1>
+          <p>
+            Catch the dripping oil with your bucket. Empty it over the cat when it
+            is waiting and avoid dousing the patrol! Each successful delivery is
+            worth 10 points.
+          </p>
+          <ul>
+            <li><strong>← / →</strong> – move between the three catch points</li>
+            <li><strong>Space</strong> – empty the bucket</li>
+            <li><strong>Enter</strong> – start or restart</li>
+          </ul>
+        </div>
+      </section>
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          <h2>Press Enter to Start</h2>
+          <p>Catch oil, deliver safely, and aim for the high score!</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
